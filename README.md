@@ -48,3 +48,31 @@ Students complete a variety of projects that require problem analysis, design, c
 ## Solution Design:
 
 One or more projects require solution design, for example, changing existing code to remove a race condition.
+
+
+-----------------------------------------------------------------
+
+# Write functions in xv6
+
+- `vikalloc_set_min(size_t size)`: Sets the minimum memory allocation size and returns the current minimum size.
+
+- `vikalloc_set_algorithm(vikalloc_fit_algorithm_t algorithm)`: Configures the memory allocation algorithm and logs the choice in verbose mode.
+
+- `vikalloc_set_verbose(uint8_t verbosity)`: Enables or disables verbose mode for logging messages.
+
+- `vikalloc_set_log(FILE *stream)`: Sets the log stream for message output.
+
+- `vikalloc(size_t size)`: Allocates memory using various allocation algorithms (e.g., FIRST_FIT, BEST_FIT), reusing or creating blocks as needed and handling block splitting.
+
+- `coalesce(mem_block_t *curr)`: Combines adjacent free memory blocks into larger blocks through coalescing.
+
+- `vikfree(void *ptr)`: Frees previously allocated memory blocks, coalescing adjacent free blocks if necessary.
+
+- `vikalloc_reset(void)`: Deallocates all allocated memory, effectively resetting vikalloc.
+
+- `vikcalloc(size_t nmemb, size_t size)`: Allocates memory for arrays, initializing elements to zero.
+
+- `vikrealloc(void *ptr, size_t size)`: Reallocates memory for a previously allocated block, extending it or allocating a new block and copying data.
+
+- `vikstrdup(const char *s)`: Allocates memory for a duplicated string, copying the input string and returning a pointer to the duplicate.
+
