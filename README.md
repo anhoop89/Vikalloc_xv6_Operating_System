@@ -41,14 +41,6 @@ Introduction to the principles of operating systems and concurrent programming. 
 - Device Management
 - Introductions to Protection & Security and to Networking
 
-## Oral and Written Communications:
-
-Every student is required to submit either 1 written report approx. 5 pages in length or a number of shorter reports.
-
-## Theoretical Content:
-
-- Deadlock and resource graph models. 3 hours (out of 40 total).
-
 ## Problem Analysis:
 
 Students complete a variety of projects that require problem analysis, design, coding, and testing. For example, students might design a shell program based on knowledge of desired shell behavior, or design and add synchronization to a multithreaded code. Specific projects vary for each course offering.
